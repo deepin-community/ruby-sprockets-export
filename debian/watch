@@ -1,0 +1,2 @@
+version=3
+https://gemwatch.debian.net/sprockets-export .*/sprockets-export-(.*).tar.gz

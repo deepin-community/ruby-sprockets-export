@@ -1,0 +1,23 @@
+Source: ruby-sprockets-export
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper (>= 11~),
+               gem2deb
+Standards-Version: 4.3.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-sprockets-export.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-sprockets-export
+Homepage: https://github.com/javan/sprockets-export
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-sprockets-export
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Sprockets Export
+ A Sprockets directive for hassle-free UMD-style JavaScript module definitions.
